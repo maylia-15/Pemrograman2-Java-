@@ -7,12 +7,12 @@ public class RegularStudent extends Student implements Payment {
     public RegularStudent(String name, int id, int totalSKS) {
         super(name, id);
         this.totalSKS = totalSKS;
-        this.totalUKT = pay(totalSKS); // ✅ hitung langsung di sini
+        this.totalUKT = pay(totalSKS);
     }
 
     @Override
     public double pay(int totalSKS) {
-        return totalSKS * 250000; // 250 ribu per SKS
+        return totalSKS * 250000; 
     }
 
     @Override
@@ -23,3 +23,4 @@ public class RegularStudent extends Student implements Payment {
         System.out.println("Total UKT: Rp" + totalUKT);
     }
 }
+
